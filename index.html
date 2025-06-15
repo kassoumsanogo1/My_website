@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassoum Sanogo - AI & Data Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/photo.jpg" alt="Kassoum Sanogo" class="nav-profile-img">
+                Kassoum Sanogo
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link" data-lang="nav-home">Accueil</a></li>
+                <li><a href="#competences" class="nav-link" data-lang="nav-skills">Compétences</a></li>
+                <li><a href="#projets" class="nav-link" data-lang="nav-projects">Projets</a></li>
+                <li><a href="#recherche" class="nav-link" data-lang="nav-research">Recherche</a></li>
+                <li><a href="#education" class="nav-link" data-lang="nav-education">Formation</a></li>
+                <li><a href="#contact" class="nav-link" data-lang="nav-contact">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang-code="fr" title="Français">
+                    🇫🇷
+                </button>
+                <button class="lang-btn" data-lang-code="en" title="English">
+                    🇺🇸
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Kassoum Sanogo
+                        <span class="highlight" data-lang="hero-title">Artificial Intelligence, Machine Learning & Data Engineer</span>
+                    </h1>
+                    <p class="hero-description" data-lang="hero-description">
+                        Ingénieur, chercheur et gestionnaire avec des compétences académiques et industrielles en Intelligence Artificielle, machine learning, deep learning, data science et systèmes embarqués.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary download-btn" data-type="cv">
+                            <i class="fas fa-download"></i>
+                            <span data-lang="btn-download-cv">Télécharger CV (PDF)</span>
+                        </button>
+                        <button class="btn-secondary download-btn" data-type="competences">
+                            <i class="fas fa-file-alt"></i>
+                            <span data-lang="btn-download-skills">Dossier Compétences (PDF)</span>
+                        </button>
+                        <button class="btn-secondary download-btn" data-type="projets">
+                            <i class="fas fa-project-diagram"></i>
+                            <span data-lang="btn-download-projects">Liste Projets (LaTeX)</span>
+                        </button>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/kassoum-sanogo-a50064270/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/kassoumsanogo1" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:kassoum.sanogo@outlook.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image hero-image-raised">
+                    <div class="image-container">
+                        <img src="images/photo.jpg" alt="Kassoum Sanogo" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-lang="skills-title">Mes Compétences</h2>
+            
+            <div class="skills-overview">
+                <div class="skill-category overview-card">
+                    <h3 data-lang="main-skills">Grandes Compétences</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Intelligence Artificielle</span>
+                        <span class="skill-tag primary">Machine Learning</span>
+                        <span class="skill-tag primary">Big Data</span>
+                        <span class="skill-tag primary">Deep Learning</span>
+                        <span class="skill-tag primary">Data Sciences</span>
+                        <span class="skill-tag primary">Software Engineering</span>
+                        <span class="skill-tag primary">Computer Vision</span>
+                        <span class="skill-tag primary">LangChain</span>
+                        <span class="skill-tag primary">Systèmes Embarqués</span>
+                        <span class="skill-tag primary">RAG & CAG</span>
+                        <span class="skill-tag primary">Création d'Agent IA</span>
+                    </div>
+                </div>
+
+                <div class="skill-category overview-card">
+                    <h3 data-lang="certifications">Certifications (10)</h3>
+                    <div class="certifications">
+                         <div class="cert-item">
+                            <img src="images/AWS.png" alt="AWS Partner Generative AI Essentials" class="cert-logo">
+                            <a href="https://www.credly.com/badges/de862900-fc46-40bc-943d-55c8be68a988/public_url" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>AWS Partner: Generative AI Essentials</span>
+                            </a>
+                        </div>
+                        
+                        <div class="cert-item">
+                            <img src="images/AWS.png" alt="AWS Technical Accreditation" class="cert-logo">
+                            <a href="https://www.credly.com/badges/123b2511-3ac0-4a71-a7d7-79e2f5ecf394/public_url" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>AWS Technical Accreditation</span>
+                            </a>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/Google_logo.png" alt="LLMOps Certification" class="cert-logo">
+                            <a href="https://learn.deeplearning.ai/accomplishments/37e8f785-a8f2-4e30-be9b-10563680f4b8?usp=sharing" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>LLMOps Certification</span>
+                            </a>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/AWS.png" alt="AWS Certified Data Engineer" class="cert-logo">
+                            <a href="#" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>AWS Certified Data Engineer - Associate</span>
+                            </a>
+                        </div>
+                        
+                        
+                        <div class="cert-item">
+                            <img src="images/AWS.png" alt="AWS Developing Machine Learning Solutions" class="cert-logo">
+                            <a href="#" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>AWS Developing Machine Learning Solutions</span>
+                            </a>
+                        </div>
+                       
+                        <div class="cert-item">
+                            <img src="images/langchain.jpeg" alt="Build LLM Apps with LangChain.js" class="cert-logo">
+                            <a href="https://learn.deeplearning.ai/accomplishments/1509b5e2-ed61-4876-ad3a-d1c755b8a68f?usp=sharing" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>Build LLM Apps with LangChain.js</span>
+                            </a>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/weaviate.webp" alt="Building Multimodal Search and RAG" class="cert-logo">
+                            <a href="https://learn.deeplearning.ai/accomplishments/500289bf-6d52-4382-b036-848b2b175c43?usp=sharing" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>Building Multimodal Search and RAG</span>
+                            </a>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/langchain.jpeg" alt="Functions, Tools and Agents with LangChain" class="cert-logo">
+                            <a href="https://learn.deeplearning.ai/accomplishments/9c278828-4f41-4296-b468-94613422dc3b?usp=sharing" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>Functions, Tools and Agents with LangChain</span>
+                            </a>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/Neo4j.png" alt="Knowledge Graphs for RAG" class="cert-logo">
+                            <a href="https://learn.deeplearning.ai/accomplishments/6bbb961d-67f7-4102-89b8-e4a5048093a0?usp=sharing" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>Knowledge Graphs for RAG</span>
+                            </a>
+                        </div>
+                        <div class="cert-item">
+                            <img src="images/langchain.jpeg" alt="LangChain for LLM Application Development" class="cert-logo">
+                            <a href="https://learn.deeplearning.ai/accomplishments/5a171d52-2bd2-471b-a7d9-253208a212ac?usp=sharing" target="_blank" class="cert-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>LangChain for LLM Application Development</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-code"></i>
+                        <h3 data-lang="programming-languages">Langages de programmation principaux</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item featured">
+                            <span class="tech-name">Python</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">R</span>
+                            <span class="tech-desc">Statistiques et data science</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Java / Scala</span>
+                            <span class="tech-desc">Big data, production</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">C++</span>
+                            <span class="tech-desc">Performance, IA embarquée</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Julia</span>
+                            <span class="tech-desc">Calcul scientifique</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">JavaScript</span>
+                            <span class="tech-desc">IA côté navigateur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Frameworks ML/DL</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item featured">
+                            <span class="tech-name">TensorFlow</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">PyTorch</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Keras</span>
+                            <span class="tech-desc">Haut niveau avec TensorFlow</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Scikit-learn</span>
+                            <span class="tech-desc">ML traditionnel</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">XGBoost / LightGBM</span>
+                            <span class="tech-desc">Gradient boosting</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">Hugging Face</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Data Processing & Visualisation</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item featured">
+                            <span class="tech-name">Pandas / NumPy</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Matplotlib / Seaborn</span>
+                            <span class="tech-desc">Visualisation Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Plotly</span>
+                            <span class="tech-desc">Visualisation interactive</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Power BI / Tableau</span>
+                            <span class="tech-desc">Business Intelligence</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Jupyter / JupyterLab</span>
+                            <span class="tech-desc">Environnement de développement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-language"></i>
+                        <h3>NLP & Traitement du langage</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">spaCy</span>
+                            <span class="tech-desc">NLP industriel</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">NLTK</span>
+                            <span class="tech-desc">Toolkit NLP</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">Transformers</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">LangChain</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">LlamaIndex</span>
+                            <span class="tech-desc">Agents, RAG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>LLMs & RAG</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item featured">
+                            <span class="tech-name">OpenAI API</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Anthropic Claude</span>
+                            <span class="tech-desc">LLM conversationnel</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Mistral AI</span>
+                            <span class="tech-desc">LLM français</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Ollama</span>
+                            <span class="tech-desc">Exécution locale</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">GroqCloud</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Pinecone / FAISS</span>
+                            <span class="tech-desc">Recherche vectorielle</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">ChromaDB</span>
+                            <span class="tech-desc">Base vectorielle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-eye"></i>
+                        <h3>Computer Vision</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item featured">
+                            <span class="tech-name">OpenCV</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">YOLO</span>
+                            <span class="tech-desc">Détection d'objets</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Detectron2</span>
+                            <span class="tech-desc">Meta Vision</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">MediaPipe</span>
+                            <span class="tech-desc">Google Vision</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">SAM</span>
+                            <span class="tech-desc">Segmentation de matériaux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>MLOps & DevOps</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">MLflow</span>
+                            <span class="tech-desc">Lifecycle ML</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">DVC</span>
+                            <span class="tech-desc">Data Version Control</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">Apache Airflow</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Kubeflow</span>
+                            <span class="tech-desc">ML sur Kubernetes</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Weights & Biases</span>
+                            <span class="tech-desc">Suivi expériences</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">Docker</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud IA & Plateformes</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item featured">
+                            <span class="tech-name">AWS SageMaker</span>
+                            <span class="tech-level">Certifié</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Google Vertex AI</span>
+                            <span class="tech-desc">ML sur GCP</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Azure ML Studio</span>
+                            <span class="tech-desc">ML sur Azure</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">Databricks</span>
+                            <span class="tech-level">Avancé</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">H2O.ai</span>
+                            <span class="tech-desc">AutoML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Bases de données & Big Data</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">MongoDB</span>
+                            <span class="tech-desc">NoSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">PostgreSQL</span>
+                            <span class="tech-desc">SQL + JSON</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Neo4j</span>
+                            <span class="tech-desc">Base de graphes</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">Apache Kafka</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">Cassandra</span>
+                            <span class="tech-level">Avancé</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">DuckDB</span>
+                            <span class="tech-desc">Analytics local</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-header">
+                        <i class="fas fa-magic"></i>
+                        <h3>IA Générative</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item featured">
+                            <span class="tech-name">DALL·E / Midjourney</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Stable Diffusion</span>
+                            <span class="tech-desc">Génération d'images</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Runway ML / Sora</span>
+                            <span class="tech-desc">Génération de vidéos</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">ElevenLabs / Coqui</span>
+                            <span class="tech-desc">Synthèse vocale</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">MusicGen / Suno</span>
+                            <span class="tech-desc">Génération musicale</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">ChatGPT / Gemini</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <span class="tech-name">Claude Code</span>
+                            <span class="tech-level">Avancé</span>
+                        </div>
+                         <div class="tech-item featured">
+                            <span class="tech-name">Hugging Face model</span>
+                            <span class="tech-level">Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-lang="projects-title">Mes Projets</h2>
+            
+            <div class="projects-grid">
+                <!-- Projets Entreprise -->
+                <div class="project-card" data-category="enterprise">
+                    <div class="project-header">
+                        <h3>Plateforme d'Analyse de Logs - MMA</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Plateforme en production chez MMA utilisant des techniques avancées pour l'analyse et l'interprétation des logs système.</p>
+                        <ul>
+                            <li>Regex pour la synthèse des logs</li>
+                            <li>Machine Learning pour la classification</li>
+                            <li>Vectorisation et LLMs pour l'interprétation automatique</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">LLM</span>
+                            <span class="tag">Production</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="enterprise">
+                    <div class="project-header">
+                        <h3>Plateforme Multi-LLMs - BPIFRANCE</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Solution en production permettant l'interconnexion de plusieurs modèles LLM sur un même système RAG avec mémoire partagée.</p>
+                        <ul>
+                            <li>LiteLLM pour unifier les sorties de modèles</li>
+                            <li>LangChain pour le chaînage des modèles</li>
+                            <li>GroqCloud pour les modèles Open Source</li>
+                            <li>Techniques de data science pour le traitement documentaire</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">Production</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="enterprise">
+                    <div class="project-header">
+                        <h3>Analyseur de Spécifications - COVEA</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Plateforme d'analyse automatique des documents de spécifications pour l'estimation de projets de développement.</p>
+                        <ul>
+                            <li>Estimation du temps de développement</li>
+                            <li>Recommandation du nombre et niveau des développeurs</li>
+                            <li>Analyse complète des cahiers des charges</li>
+                            <li>Techniques NLP et Machine Learning</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Analyse de documents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projets Machine Learning -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-header">
+                        <h3>Système de Localisation Indoor</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Développement d'un système de localisation intérieure haute précision utilisant des techniques de Machine Learning.</p>
+                        <ul>
+                            <li>Amélioration de la précision des données de localisation</li>
+                            <li>Algorithmes de Machine Learning pour la triangulation</li>
+                            <li>Optimisation des performances en temps réel</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Localisation</span>
+                            <span class="tag">Temps réel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-header">
+                        <h3>Reconnaissance Vocale</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Système de reconnaissance automatique de langues à partir d'échantillons vocaux utilisant des techniques de Machine Learning.</p>
+                        <ul>
+                            <li>Traitement du signal audio</li>
+                            <li>Extraction de caractéristiques vocales</li>
+                            <li>Classification multi-langues</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Traitement audio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-header">
+                        <h3>Classification de Vêtements</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Développement de modèles de classification automatique pour la reconnaissance et catégorisation de vêtements.</p>
+                        <ul>
+                            <li>Traitement d'images de vêtements</li>
+                            <li>Modèles de classification supervisée</li>
+                            <li>Optimisation des performances de classification</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Classification</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-header">
+                        <h3>Analyse Hydrologique - Barrage de Bagré</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Système d'analyse prédictive pour la gestion des niveaux d'eau du barrage de Bagré utilisant des données de capteurs IoT.</p>
+                        <ul>
+                            <li>Traitement de données de température, pression et niveau d'eau</li>
+                            <li>Prédiction des niveaux d'abaissement et d'élévation</li>
+                            <li>Analyse des crues et des périodes de sécheresse</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Analyse prédictive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projets Deep Learning -->
+                <div class="project-card" data-category="dl">
+                    <div class="project-header">
+                        <h3>IA pour le Jeu Othello</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Développement d'une IA pour le jeu Othello avec classement automatique des pions, reconnu comme le meilleur modèle de la classe.</p>
+                        <ul>
+                            <li>Algorithmes de Deep Learning pour la stratégie de jeu</li>
+                            <li>Classification automatique des positions optimales</li>
+                            <li>Optimisation des performances de jeu</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">IA de jeu</span>
+                            <span class="tag">Classification</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projets Systèmes Embarqués -->
+                <div class="project-card" data-category="embedded">
+                    <div class="project-header">
+                        <h3>Voiture Autonome Arduino</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Prototype de véhicule autonome capable d'éviter les obstacles en temps réel.</p>
+                        <ul>
+                            <li>Moteur DC et servo moteur pour la propulsion</li>
+                            <li>Capteurs ultrasoniques pour la détection d'obstacles</li>
+                            <li>Algorithmes d'évitement en temps réel</li>
+                            <li>Programmation Arduino</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">Systèmes embarqués</span>
+                            <span class="tag">Robotique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="embedded">
+                    <div class="project-header">
+                        <h3>Détection de Présence STM32</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Système de détection de présence utilisant des capteurs PIR et microcontrôleur STM32 F476.</p>
+                        <ul>
+                            <li>Intégration de capteurs PIR</li>
+                            <li>Programmation STM32 F476</li>
+                            <li>Gestion des interruptions et signaux</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">STM32</span>
+                            <span class="tag">Capteurs PIR</span>
+                            <span class="tag">Temps réel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="embedded">
+                    <div class="project-header">
+                        <h3>Station Météorologique STM32</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Système de prévision météorologique utilisant capteur DHT11 et microcontrôleur STM32 F411RE Nucléo.</p>
+                        <ul>
+                            <li>Capteur DHT11 pour température et humidité</li>
+                            <li>Contrôle LCD intégré avec STM32 F476</li>
+                            <li>Utilisation des interruptions système</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">STM32</span>
+                            <span class="tag">Capteurs météo</span>
+                            <span class="tag">LCD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projets Applications -->
+                <div class="project-card" data-category="app">
+                    <div class="project-header">
+                        <h3>Plateforme de Covoiturage Universitaire</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Application de covoiturage dédiée à l'université avec accès restreint aux membres de la communauté universitaire.</p>
+                        <ul>
+                            <li>Développement en Java</li>
+                            <li>Système d'authentification universitaire</li>
+                            <li>Gestion des trajets et réservations</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Application web</span>
+                            <span class="tag">Authentification</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app">
+                    <div class="project-header">
+                        <h3>Application Météo Temps Réel</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Application météo utilisant les API de Météo France et Base Adresse France pour des données en temps réel.</p>
+                        <ul>
+                            <li>Intégration API Météo France</li>
+                            <li>Géolocalisation avec Base Adresse France</li>
+                            <li>Interface utilisateur intuitive en Java</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">API REST</span>
+                            <span class="tag">Météorologie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app">
+                    <div class="project-header">
+                        <h3>Jeu Loup Garou IA</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Adaptation du jeu Loup Garou permettant aux joueurs solitaires de jouer avec des agents IA conversationnels.</p>
+                        <ul>
+                            <li>Intégration de modèles LLM pour les personnages</li>
+                            <li>Chat interactif avec les agents IA</li>
+                            <li>Logique de jeu automatisée</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">IA conversationnelle</span>
+                            <span class="tag">Jeu interactif</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="app">
+                    <div class="project-header">
+                        <h3>Optimisation Logistique Commandes</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Système d'automatisation et d'optimisation du temps de préparation des commandes en entrepôt.</p>
+                        <ul>
+                            <li>Algorithmes d'optimisation de parcours</li>
+                            <li>Automatisation des processus de préparation</li>
+                            <li>Réduction significative des temps de traitement</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Optimisation</span>
+                            <span class="tag">Automatisation</span>
+                            <span class="tag">Logistique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet Recherche -->
+                <div class="project-card" data-category="research">
+                    <div class="project-header">
+                        <h3>Recherche IRD - IA et Plantes</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <p>Projet de recherche sur l'application de l'intelligence artificielle à l'étude des plantes.</p>
+                        <ul>
+                            <li>Développement d'API Python et Java</li>
+                            <li>Visualisation de données par graphiques</li>
+                            <li>API multi-plateformes pour la saisie de données</li>
+                            <li>Recherche appliquée en IA</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Recherche</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Visualisation</span>
+                            <span class="tag">IA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Axes de Recherche -->
+    <section id="recherche" class="research">
+        <div class="container">
+            <h2 class="section-title" data-lang="research-title">Mes Axes de Recherche</h2>
+            
+            <div class="research-grid">
+                <!-- Recherche NLP & LLM -->
+                <div class="research-card" data-category="nlp">
+                    <div class="research-header">
+                        <h3>Système de Vectorisation pour Documents</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Mise en place d'un système de vectorisation avancé pour traiter efficacement les données issues de documents complexes.</p>
+                        <ul>
+                            <li>Optimisation des embeddings pour différents types de documents</li>
+                            <li>Amélioration de la précision de la recherche sémantique</li>
+                            <li>Adaptation aux formats multimodaux (texte, images, tableaux)</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Vectorisation</span>
+                            <span class="tag">Embeddings</span>
+                            <span class="tag">Documents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="nlp">
+                    <div class="research-header">
+                        <h3>Optimisation des Modèles Embeddings</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Recherche sur l'optimisation des modèles embeddings de Sentence Transformer pour améliorer les performances de similarité sémantique.</p>
+                        <ul>
+                            <li>Fine-tuning adaptatif selon les domaines</li>
+                            <li>Réduction de la dimensionnalité sans perte de qualité</li>
+                            <li>Techniques de distillation de modèles</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Sentence Transformer</span>
+                            <span class="tag">Optimisation</span>
+                            <span class="tag">Fine-tuning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="nlp">
+                    <div class="research-header">
+                        <h3>Mémoire SQLite pour LLM</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Développement d'un système de mémoire persistante pour LLM utilisant SQLite, permettant de réduire la perte de contexte.</p>
+                        <ul>
+                            <li>Stockage intelligent des conversations précédentes</li>
+                            <li>Récupération contextuelle dynamique</li>
+                            <li>Adaptation multi-modèles (GPT, Claude, Llama)</li>
+                            <li>Gestion de la concentration sur les tâches longues</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">LLM Memory</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Context</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="nlp">
+                    <div class="research-header">
+                        <h3>Benchmark de Comparaison LLM</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Mise en place d'un système de benchmark complet pour comparer les performances de différents modèles LLM.</p>
+                        <ul>
+                            <li>Métriques standardisées de performance</li>
+                            <li>Tests sur différents domaines et langues</li>
+                            <li>Évaluation de la cohérence et de la créativité</li>
+                            <li>Interface de visualisation des résultats</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Benchmark</span>
+                            <span class="tag">Évaluation</span>
+                            <span class="tag">Performance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Éthique et Conformité -->
+                <div class="research-card" data-category="ethics">
+                    <div class="research-header">
+                        <h3>Éthique et Conformité RGPD dans l'IA</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Étude approfondie sur la minimisation des biais algorithmiques et le respect de la vie privée selon les standards européens et canadiens.</p>
+                        <ul>
+                            <li>Implémentation de mécanismes de consentement explicite</li>
+                            <li>Anonymisation et pseudonymisation des données</li>
+                            <li>Auditabilité des modèles et traçabilité des décisions</li>
+                            <li>Conformité aux réglementations internationales</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">RGPD</span>
+                            <span class="tag">Éthique IA</span>
+                            <span class="tag">Biais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="ethics">
+                    <div class="research-header">
+                        <h3>Gouvernance des Données IA</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Traçabilité des flux de données, gestion des métadonnées, et intégration de politiques d'accès selon les profils utilisateurs.</p>
+                        <ul>
+                            <li>Pipelines de données traçables et auditables</li>
+                            <li>Gestion fine des métadonnées et lineage</li>
+                            <li>Contrôle d'accès basé sur les rôles (RBAC)</li>
+                            <li>Politiques de rétention et archivage</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Data Governance</span>
+                            <span class="tag">Métadonnées</span>
+                            <span class="tag">Accès</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="ethics">
+                    <div class="research-header">
+                        <h3>Audit et Détection de Biais LLM</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Système semi-automatisé de détection de biais ou de comportements non-éthiques dans les réponses générées par les LLM.</p>
+                        <ul>
+                            <li>Détection automatique de biais culturels et sociaux</li>
+                            <li>Analyse de toxicité et de discrimination</li>
+                            <li>Métriques de fairness et d'équité</li>
+                            <li>Système d'alerte et de correction</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Audit IA</span>
+                            <span class="tag">Détection Biais</span>
+                            <span class="tag">Fairness</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explainability et Sécurité -->
+                <div class="research-card" data-category="security">
+                    <div class="research-header">
+                        <h3>Explainability (XAI) pour NLP</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Développement de méthodes d'explication locale et intrinsèque pour les sorties de modèles de classification, RAG ou LLM.</p>
+                        <ul>
+                            <li>Implémentation de LIME et SHAP pour NLP</li>
+                            <li>Techniques d'attention visualization</li>
+                            <li>Explicabilité des systèmes RAG</li>
+                            <li>Interface utilisateur pour l'interprétation</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">XAI</span>
+                            <span class="tag">LIME/SHAP</span>
+                            <span class="tag">Interprétabilité</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="security">
+                    <div class="research-header">
+                        <h3>Sécurité IA - Attaques Adversariales</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Stratégies de défense et de filtrage contre les attaques adversariales et injection de prompt dans les systèmes IA.</p>
+                        <ul>
+                            <li>Détection de jailbreak et prompt injection</li>
+                            <li>Filtrage intelligent des inputs malveillants</li>
+                            <li>Robustesse face aux attaques adversariales</li>
+                            <li>Mécanismes de sécurité adaptatifs</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Sécurité IA</span>
+                            <span class="tag">Attaques</span>
+                            <span class="tag">Défense</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agents IA -->
+                <div class="research-card" data-category="agents">
+                    <div class="research-header">
+                        <h3>Agents Spécialisés Autonomes</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Conception modulaire d'agents IA dotés de capacités spécifiques, collaborant via protocole partagé.</p>
+                        <ul>
+                            <li>Agents RAG spécialisés par domaine</li>
+                            <li>Agents de scraping et d'analyse web</li>
+                            <li>Agents de classification et annotation</li>
+                            <li>Architecture modulaire et extensible</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Agents IA</span>
+                            <span class="tag">Autonomie</span>
+                            <span class="tag">Spécialisation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="agents">
+                    <div class="research-header">
+                        <h3>Orchestration Multi-Agents PULSAR</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Coordination dynamique d'agents IA spécialisés via un Super Agent (PULSAR) avec mémoire partagée et priorisation intelligente.</p>
+                        <ul>
+                            <li>Pipeline intelligent de coordination</li>
+                            <li>Mémoire partagée entre agents</li>
+                            <li>Priorisation dynamique des tâches</li>
+                            <li>Interventions humaines contextuelles</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">PULSAR</span>
+                            <span class="tag">Multi-Agents</span>
+                            <span class="tag">Orchestration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="agents">
+                    <div class="research-header">
+                        <h3>Interopérabilité Agent-to-Agent</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Standardisation des échanges entre agents via protocoles JSON, GraphQL ou message passing adaptatif.</p>
+                        <ul>
+                            <li>Protocoles de communication standardisés</li>
+                            <li>Message passing adaptatif et asynchrone</li>
+                            <li>Négociation automatique de protocoles</li>
+                            <li>Gestion des pannes et recovery</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Interopérabilité</span>
+                            <span class="tag">Protocoles</span>
+                            <span class="tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="agents">
+                    <div class="research-header">
+                        <h3>Optimisation des Workflows IA</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Intégration de mécanismes de décision avancés pour l'exécution de tâches complexes avec planification intelligente.</p>
+                        <ul>
+                            <li>Implémentation Tree-of-Thoughts et ReAct</li>
+                            <li>Planification hiérarchique des tâches</li>
+                            <li>AutoGen pour coordination automatique</li>
+                            <li>Optimisation des performances globales</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Workflows</span>
+                            <span class="tag">Planification</span>
+                            <span class="tag">AutoGen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="research-card" data-category="agents">
+                    <div class="research-header">
+                        <h3>Évaluation Performance Multi-Agents</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Benchmark sur l'efficacité, cohérence et scalabilité des systèmes multi-agents collaboratifs.</p>
+                        <ul>
+                            <li>Métriques de performance collaborative</li>
+                            <li>Évaluation de la répartition des rôles</li>
+                            <li>Mesure de latence et throughput</li>
+                            <li>Qualité et cohérence des résultats finaux</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">Benchmark</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Scalabilité</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet IRD -->
+                <div class="research-card" data-category="applied">
+                    <div class="research-header">
+                        <h3>Projet IRD - IA et Plantes</h3>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="research-content">
+                        <p>Recherche appliquée sur l'intelligence artificielle et les plantes avec développement d'API et visualisation de données.</p>
+                        <ul>
+                            <li>API Python et Java pour collecte de données</li>
+                            <li>Graphiques interactifs pour visualisation</li>
+                            <li>Connectivité multi-plateforme</li>
+                            <li>Interface de saisie de données botaniques</li>
+                        </ul>
+                        <div class="research-tags">
+                            <span class="tag">IRD</span>
+                            <span class="tag">Botanique</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Visualisation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Education -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title" data-lang="education-title">Formation</h2>
+            
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>Diplôme d'Ingénieur en Informatique</h3>
+                            <h4>Spécialisation Data Science et Intelligence Artificielle</h4>
+                            <div class="school">
+                                <i class="fas fa-university"></i>
+                                ESEO - École d'Ingénieurs
+                            </div>
+                            <div class="education-description">
+                                Formation avancée en sciences des données et intelligence artificielle, avec focus sur les technologies émergentes et les applications industrielles.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>Master MBA</h3>
+                            <h4>Management et Administration des Affaires</h4>
+                            <div class="school">
+                                <i class="fas fa-university"></i>
+                                Le Mans Université
+                            </div>
+                            <div class="education-description">
+                                Formation complémentaire en gestion et management pour développer les compétences entrepreneuriales et de leadership.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2022 - 2024</div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>Diplôme d'Ingénieur en Informatique</h3>
+                            <h4>Spécialisation Systèmes Embarqués et Temps Réel</h4>
+                            <div class="school">
+                                <i class="fas fa-university"></i>
+                                ENSIM - École d'Ingénieurs Le Mans Université
+                            </div>
+                            <div class="education-description">
+                                Formation approfondie en systèmes embarqués, programmation temps réel, architecture matérielle et développement de solutions IoT.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>Classes Préparatoires aux Grandes Écoles</h3>
+                            <h4>Mathématiques et Physique (CPGE)</h4>
+                            <div class="school">
+                                <i class="fas fa-university"></i>
+                                École Polytechnique
+                            </div>
+                            <div class="education-description">
+                                Formation intensive en mathématiques et physique, développement des capacités d'analyse et de résolution de problèmes complexes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-highlights">
+                <h3>Points Forts Académiques</h3>
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Excellence Académique</h4>
+                            <p>Parcours d'excellence avec spécialisations multiples en IA et systèmes embarqués. GPA 4/4 en école d'ingénieur</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Double Compétence</h4>
+                            <p>Formation technique approfondie complétée par des compétences en management</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="highlight-content">
+                            <h4>Innovation</h4>
+                            <p>Focus sur les technologies émergentes et l'application pratique en entreprise</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-lang="contact-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>kassoum.sanogo@outlook.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>France & Canada</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Artificial Intelligence, Machine Learning & Data Engineer @ Apside</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <div class="footer-contact-items">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:kassoum.sanogo@outlook.com">kassoum.sanogo@outlook.com</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:kassoum_sanogo@reseau.eseo.fr">kassoum_sanogo@reseau.eseo.fr</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>France & Canada</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/kassoum-sanogo-a50064270/" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/kassoumsanogo1" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <img src="images/photo.jpg" alt="Kassoum Sanogo" class="footer-profile-img">
+                        <div>
+                            <h4>Kassoum Sanogo</h4>
+                            <p>Artificial Intelligence, Machine Learning & Data Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kassoum Sanogo. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
