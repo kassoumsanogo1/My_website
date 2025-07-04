@@ -243,6 +243,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav-home': 'Accueil',
             'nav-skills': 'Compétences',
             'nav-projects': 'Projets',
+            'nav-research': 'Recherche',
             'nav-education': 'Formation',
             'nav-contact': 'Contact',
             'hero-title': 'AI & Data Engineer',
@@ -263,9 +264,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'nav-home': 'Home',
             'nav-skills': 'Skills',
             'nav-projects': 'Projects',
+            'nav-research': 'Research',
             'nav-education': 'Education',
             'nav-contact': 'Contact',
-            'hero-title': 'AI & Data Engineer',
+            'hero-title': 'Artificial Intelligence, Machine Learning & Data Engineer',
             'hero-description': 'Engineer, researcher and manager with academic and industrial skills in Artificial Intelligence, machine learning, deep learning, data science and embedded systems.',
             'btn-download-cv': 'Download CV (PDF)',
             'btn-download-skills': 'Skills Portfolio (PDF)',
@@ -281,14 +283,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    // Langue courante - déclarée en global
-    let currentLang = 'fr';
+    // Langue courante - déclarée en global - CHANGED DEFAULT TO ENGLISH
+    let currentLang = 'en';
 
     // Fonction pour initialiser la langue
     function initializeLanguage() {
         const savedLang = localStorage.getItem('preferred-language');
         const browserLang = navigator.language.startsWith('en') ? 'en' : 'fr';
-        const initialLang = savedLang || browserLang;
+        const initialLang = savedLang || 'en'; // Default to English instead of browser language
         
         if (initialLang !== currentLang) {
             changeLanguage(initialLang);
