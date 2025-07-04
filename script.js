@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observer les éléments à animer
-    document.querySelectorAll('.skill-category, .overview-card, .tech-category, .project-card, .research-card, .contact-item, .timeline-item, .highlight-item, .education-card').forEach(el => {
+    document.querySelectorAll('.skill-category, .overview-card, .tech-category, .company-item, .project-card, .research-card, .contact-item, .timeline-item, .highlight-item, .education-card').forEach(el => {
         observer.observe(el);
         
         // Préparer les highlight-items pour l'animation
@@ -255,6 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'main-skills': 'Grandes Compétences',
             'certifications': 'Certifications (10)',
             'programming-languages': 'Langages de programmation principaux',
+            'experience-title': 'Expérience Professionnelle',
             'projects-title': 'Mes Projets',
             'research-title': 'Mes Axes de Recherche',
             'education-title': 'Formation',
@@ -276,6 +277,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'main-skills': 'Core Skills',
             'certifications': 'Certifications (10)',
             'programming-languages': 'Main Programming Languages',
+            'experience-title': 'Professional Experience',
             'projects-title': 'My Projects',
             'research-title': 'My Research Areas',
             'education-title': 'Education',
