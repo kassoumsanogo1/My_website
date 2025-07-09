@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'hero-description': 'Ingénieur, chercheur et gestionnaire avec des compétences académiques et industrielles en Intelligence Artificielle, machine learning, deep learning, data science et systèmes embarqués.',
             'btn-download-cv': 'Télécharger CV (PDF)',
             'btn-download-skills': 'Dossier Compétences (PDF)',
-            'btn-download-projects': 'Liste Projets (LaTeX)',
+            'btn-location': '🇫🇷 France & 🇨🇦 Canada',
             'skills-title': 'Mes Compétences',
             'main-skills': 'Grandes Compétences',
             'certifications': 'Certifications (10)',
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'hero-description': 'Engineer, researcher and manager with academic and industrial skills in Artificial Intelligence, machine learning, deep learning, data science and embedded systems.',
             'btn-download-cv': 'Download CV (PDF)',
             'btn-download-skills': 'Skills Portfolio (PDF)',
-            'btn-download-projects': 'Projects List (LaTeX)',
+            'btn-location': '🇫🇷 France & 🇨🇦 Canada',
             'skills-title': 'My Skills',
             'main-skills': 'Core Skills',
             'certifications': 'Certifications (10)',
@@ -366,6 +366,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialiser la langue après le chargement
     initializeLanguage();
+
+    // Company logo click effects
+    const companyLogos = document.querySelectorAll('.company-logo');
+    
+    companyLogos.forEach(logo => {
+        logo.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remove active class from all logos
+            companyLogos.forEach(otherLogo => {
+                otherLogo.classList.remove('logo-clicked');
+            });
+            
+            // Add active class to clicked logo
+            this.classList.add('logo-clicked');
+            
+            // Remove the class after animation
+            setTimeout(() => {
+                this.classList.remove('logo-clicked');
+            }, 3000);
+        });
+        
+        // Add hover effect enhancement
+        logo.addEventListener('mouseenter', function() {
+            this.style.zIndex = '20';
+        });
+        
+        logo.addEventListener('mouseleave', function() {
+            if (!this.classList.contains('logo-clicked')) {
+                this.style.zIndex = '1';
+            }
+        });
+    });
 });
 
 // Fonction pour obtenir la langue courante

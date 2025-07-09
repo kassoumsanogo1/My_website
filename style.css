@@ -204,6 +204,43 @@ body {
     transform: translateY(-2px);
 }
 
+/* Location button specific styling */
+.location-btn {
+    background: var(--primary-blue);
+    color: white;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--dark-blue);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.location-btn:hover::before {
+    opacity: 1;
+}
+
+.location-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+}
+
+.location-btn span {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
@@ -530,6 +567,60 @@ body {
 /* Projects Section */
 .projects {
     padding: 6rem 0;
+}
+
+.projects-note {
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border-left: 4px solid #dc2626;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.15);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    border: 1px solid #fecaca;
+}
+
+.projects-note p {
+    margin: 0;
+    color: var(--gray-700);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    font-style: italic;
+}
+
+.projects-note strong {
+    color: #dc2626;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(220, 38, 38, 0.1);
+}
+
+.dev-note {
+    margin-top: 1rem !important;
+    padding-top: 1rem;
+    border-top: 1px solid #fecaca;
+    color: var(--gray-600) !important;
+    font-size: 0.9rem !important;
+}
+
+.dev-note strong {
+    color: var(--primary-blue) !important;
+    text-shadow: none !important;
+}
+
+.dev-note a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.dev-note a:hover {
+    color: var(--dark-blue);
+    text-decoration: underline;
 }
 
 .projects-grid {
@@ -1258,11 +1349,27 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
     overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 .company-item:hover .company-logo {
     transform: scale(1.05);
     box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+}
+
+/* Click effect for company logo */
+.company-logo:hover {
+    transform: scale(1.3) !important;
+    z-index: 10;
+    box-shadow: 0 15px 50px rgba(37, 99, 235, 0.4);
+    border: 3px solid var(--primary-blue);
+}
+
+.company-logo:active {
+    transform: scale(1.4) !important;
+    transition: transform 0.1s ease;
 }
 
 .company-img {
@@ -1276,50 +1383,14 @@ body {
     transform: scale(1.1);
 }
 
-.company-position {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+/* Enhanced hover effect for company logo image */
+.company-logo:hover .company-img {
+    transform: scale(1.2) !important;
+    filter: brightness(1.1);
 }
 
-.company-position h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--gray-900);
-    margin: 0;
-    transition: var(--transition);
-}
-
-.company-item:hover .company-position h4 {
-    color: var(--primary-blue);
-}
-
-.position-duration {
-    font-size: 0.9rem;
-    color: var(--gray-600);
-    font-weight: 500;
-    padding: 0.25rem 0.75rem;
-    background: var(--light-blue);
-    border-radius: 15px;
-    display: inline-block;
-    transition: var(--transition);
-}
-
-.company-item:hover .position-duration {
-    background: var(--primary-blue);
-    color: white;
-}
-
-/* Animation pour les entreprises */
-.company-item {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease;
-}
-
-.company-item.fade-in {
-    opacity: 1;
-    transform: translateY(0);
+.company-logo:active .company-img {
+    transform: scale(1.3) !important;
 }
 
 /* Responsive pour la section expérience */
@@ -1337,6 +1408,14 @@ body {
         width: 100px;
         height: 100px;
         margin-bottom: 1rem;
+    }
+    
+    .company-logo:hover {
+        transform: scale(1.2) !important;
+    }
+    
+    .company-logo:active {
+        transform: scale(1.3) !important;
     }
     
     .company-img {
@@ -1364,6 +1443,14 @@ body {
         height: 90px;
     }
     
+    .company-logo:hover {
+        transform: scale(1.15) !important;
+    }
+    
+    .company-logo:active {
+        transform: scale(1.25) !important;
+    }
+    
     .company-img {
         width: 60px;
         height: 60px;
@@ -1381,6 +1468,60 @@ body {
 /* Projects Section */
 .projects {
     padding: 6rem 0;
+}
+
+.projects-note {
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+    border-left: 4px solid #dc2626;
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.15);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    border: 1px solid #fecaca;
+}
+
+.projects-note p {
+    margin: 0;
+    color: var(--gray-700);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    font-style: italic;
+}
+
+.projects-note strong {
+    color: #dc2626;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(220, 38, 38, 0.1);
+}
+
+.dev-note {
+    margin-top: 1rem !important;
+    padding-top: 1rem;
+    border-top: 1px solid #fecaca;
+    color: var(--gray-600) !important;
+    font-size: 0.9rem !important;
+}
+
+.dev-note strong {
+    color: var(--primary-blue) !important;
+    text-shadow: none !important;
+}
+
+.dev-note a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.dev-note a:hover {
+    color: var(--dark-blue);
+    text-decoration: underline;
 }
 
 .projects-grid {
@@ -2321,6 +2462,10 @@ body {
 }
 
 /* Hide download buttons temporarily */
+.download-btn[data-type="cv"],
+.download-btn[data-type="competences"] {
+    display: none !important;
+}
 .download-btn[data-type="cv"],
 .download-btn[data-type="competences"] {
     display: none !important;
