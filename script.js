@@ -206,16 +206,19 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             // Télécharger le fichier PDF directement
             const link = document.createElement('a');
-            link.href = 'documents/Kassoum_Sanogo_CV.pdf';
+            link.href = 'resume/resume_doctoral_Sanogo_Kassoum.pdf'; // Changé de 'documents/' à 'resume/'
             link.download = 'Kassoum_Sanogo_CV.pdf';
+            link.target = '_blank'; // Ouvre dans un nouvel onglet si le téléchargement échoue
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
         } catch (error) {
             console.error('Erreur lors du téléchargement du CV:', error);
-            alert('Erreur lors du téléchargement du CV. Veuillez réessayer.');
+            // Fallback: essayer d'ouvrir le fichier dans un nouvel onglet
+            window.open('resume/resume_doctoral_Sanogo_Kassoum.pdf', '_blank');
         }
     }
+
 
     function downloadCompetences() {
         try {

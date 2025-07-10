@@ -2462,11 +2462,6 @@ body {
 }
 
 /* Hide download buttons temporarily */
-.download-btn[data-type="cv"],
-.download-btn[data-type="competences"] {
-    display: none !important;
-}
-.download-btn[data-type="cv"],
 .download-btn[data-type="competences"] {
     display: none !important;
 }
