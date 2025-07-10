@@ -2853,6 +2853,61 @@ body {
         justify-content: center;
         gap: 1.5rem;
     }
+
+    .contact-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1rem;
+        color: var(--gray-700);
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+        background: var(--gray-50);
+        border-radius: 12px;
+        transition: var(--transition);
+        border: 1px solid var(--gray-100);
+    }
+
+    .contact-item:hover {
+        background: white;
+        border-color: var(--light-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.1);
+    }
+
+    .contact-item i {
+        color: var(--primary-blue);
+        font-size: 1.3rem;
+        width: 30px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    .contact-item span {
+        text-align: center;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 250px;
+    }
 }
 
 /* Mobile (480px et moins) */
@@ -3010,6 +3065,23 @@ body {
         gap: 1.25rem;
         flex-wrap: wrap;
     }
+    .contact-item {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1.25rem 1rem;
+    }
+
+    .contact-item i {
+        font-size: 1.5rem;
+        width: auto;
+        margin-bottom: 0.25rem;
+    }
+
+    .contact-item span {
+        font-size: 0.95rem;
+        max-width: 280px;
+        line-height: 1.4;
+    }
 }
 
 /* Corrections spécifiques pour l'affichage mobile */
@@ -3056,5 +3128,32 @@ body {
 
     .company-logo:hover {
         transform: scale(1.1) !important;
+    }
+}
+
+
+/* Ajout d'une animation d'apparition pour les contact-items */
+.contact-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.contact-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.contact-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.contact-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
